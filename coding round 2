@@ -1,0 +1,23 @@
+#include <stdio.h>
+void main()
+{
+    int input;
+    printf("Input:");
+    scanf("%d",&input);
+    for(int row=1;row<=input+1;row++)
+    {
+        for(int j=input+1;j>row;j--)
+        {
+            printf(" ");
+        }
+        for(int k=row-1;k>=0;k--)
+        {
+            printf("%d ",k);
+        }
+        for(int l=1;l<row;l++)
+        {
+            printf("%d ",l);
+        }
+        printf("\n");
+    }
+}
